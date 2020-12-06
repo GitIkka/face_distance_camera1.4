@@ -1,0 +1,11 @@
+{
+  "name": "face-distance-camera1-header",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@chirimen/neopixel-i2c": "latest",
+    "@chirimen-raspi/polyfill": "^1.0.1"
+  },
+  "keywords": [],
+  "description": ""
+}

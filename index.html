@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Hand Wash</title>
+  </head>
+  <body>
+    <!-- video の上にオーバーレイ-->
+    <video id="video" autoplay></video>
+    <!-- 重ねて描画する canvas -->
+    <canvas id="overlay"></canvas>
+    <!--案内開始用-->
+    <div class="cont">
+      <table>
+        <tr>
+          <td>Distance [mm]</td>
+          <td id="dist"></td>
+        </tr>
+        <tr>
+          <td>Water Flow</td>
+          <td id="water"></td>
+        </tr>
+      </table>
+      <div id="cont-inner">案内開始</div>
+    </div>
+    <!--距離センサ用-->
+    <script src="node_modules/@chirimen-raspi/polyfill/polyfill.js"></script>
+    <script src="node_modules/@chirimen/vl53l0x/vl53l0x.js"></script>
+    <script src="js/distance_sensor.js" defer></script>
+    <!--カメラ用-->
+    <script type="text/javascript" src="js/camera.js"></script>
+    <!--顔認証-->
+    <script src="js/clmtrackr.js"></script>
+    <script src="js/model_pca_20_svm.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
